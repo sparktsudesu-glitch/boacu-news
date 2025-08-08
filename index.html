@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boaçu News - Sua fonte de notícias</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://i.imgur.com/PlmrEVt.png"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f5;
+        color: #333;
+      }
+
+      header {
+        background: #070707;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      header .logo {
+        margin: 0;
+      }
+
+      .logo img {
+        margin-top: -10px;
+        width: 200px;
+        filter: invert(1);
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin: 10px 0 0;
+      }
+
+      nav ul li {
+        margin: 0 15px;
+      }
+
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .banner {
+        background: #fff;
+        color:  #333;
+        text-align: center;
+        border-radius: 16px;
+        margin-top: 10px;
+        border-top: solid 1px #c9c9c9;
+        border-bottom: solid 1px #c9c9c9;
+      }
+
+      .banner .btn {
+        background: #fff;
+        color: #b70537;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        transition: background 0.3s;
+      }
+
+      .banner .btn:hover {
+        background: #00b241;
+        color: #fff;
+      }
+
+      .noticias {
+        padding: 20px;
+      }
+
+      .noticias h2 {
+        margin-top: 0;
+        text-align: center;
+      }
+
+      .noticias article {
+        width: 300px;
+        background: #fff;
+        margin: 10px 0;
+        border-radius: 16px;
+        border: solid 1px #c9c9c9;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .noticias article h3 {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 15px 0;
+        flex-grow: 1;
+      }
+
+      .noticias article a {
+        text-decoration: none;
+        color: #333; /* Cor do título */
+        font-weight: normal;
+      }
+      
+      .noticias article a:hover {
+        text-decoration: underline;
+        color: #b70537;
+      }
+
+      footer {
+        background: #070707;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      article img {
+width: 100%;
+    height: 100%;
+        object-fit: cover;
+        border-top-right-radius: 16px;
+        border-top-left-radius: 16px;
+      }
+
+      .principais article {
+        width: 600px;
+      }
+
+      #all {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      @media screen and (max-width: 480px) {
+        .principais article {
+          width: 330px;
+        }
+        article img {
+            height: 180px;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        .normais {
+          display: none;
+        }
+      }
+
+      #all div {
+        padding: 5px;
+      }
+
+      .banner img {
+        border-top-right-radius: 16px;
+        border-top-left-radius: 16px;
+        width: 100%;
+      }
+
+      .social {
+        justify-content: center;
+        display: flex;
+      }
+      
+      hr {
+        border-top: 1px solid #c9c9c9;
+        border: 1px solid #c9c9c9;
+      }
+      
+      a {
+        text-decoration: none;
+        color: #b70537;
+        font-weight: bold;
+      }
+      
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+<body>
+    <header>
+      <div class="logo">
+        <a href="./index.html">
+          <img src="https://i.imgur.com/PlmrEVt.png" style="width: 100px; margin-bottom: -80px;"/><br>
+          <img src="https://i.imgur.com/LhaGScC.png" style="margin-bottom: -50px;"/></a>
+      </div>
+
+      <nav style="padding-bottom: 20px">
+        <ul>
+          <li><a href="./index.html">Início</a></li>
+          <li><a href="#">Política</a></li>
+          <li><a href="#">Cultura</a></li>
+          <li><a href="#">Entretenimento</a></li>
+        </ul>
+      </nav>
+      <div>
+        <div style="display: flex; justify-content: center">
+          <div style="display: none;">
+            <img
+              src="https://cdn.glitch.global/2a3ba37e-8fd6-45e1-a2a5-5165eb61a890/icons8-instagram.svg?v=1728491751044"
+              style="width: 30px; filter: invert(1 )"
+            />
+          </div>
+          <div style="display: none;">
+            <img
+              src="https://cdn.glitch.global/2a3ba37e-8fd6-45e1-a2a5-5165eb61a890/Threads_(app )_logo.svg?v=1728491760329"
+              style="width: 30px; filter: invert(1)"
+            />
+          </div>
+          <div>
+            <a href="https://www.facebook.com/profile.php?id=61571368469882"
+              ><img
+                src="https://i.imgur.com/RqnU7Cw.png"
+                style="width: 30px; filter: invert(1 )"
+            /></a>
+          </div>
+          <div>
+            <a href="https://x.com/boacunews"
+              ><img
+                src="https://i.imgur.com/BTSc0qC.png"
+                style="width: 30px; filter: invert(1 )"
+            /></a>
+          </div>
+          <div>
+            <a href="https://www.youtube.com/@boacu.noticias"
+              ><img
+                src="https://i.imgur.com/67GMeup.png"
+                style="width: 30px; filter: invert(1 )"
+            /></a>
+          </div>
+          <div>
+            <a href="https://www.tiktok.com/@boacu.news"
+              ><img
+                src="https://i.imgur.com/uvIlrlS.png"
+                style="width: 30px; filter: invert(1 )"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="banner" style="">
+        <iframe style="border-radius: 10px;" width="100%" height="615" src="https://www.youtube.com/embed/aUCrEEcVkVw?si=LXHskJCihKMPY_3z&amp;start=146" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h2>A Bruna depois de revelar as cagadas que as Testemunhas de Jeová esconderam por anos...</h2>
+      </section>
+
+      <section class="noticias">
+        <h2>Últimas notícias</h2>
+        <div id="all">
+          <div class="normais"></div>
+          <div class="principais" id="noticias-container"></div>
+          <div class="normais"></div>
+        </div>
+
+        <script>
+          const noticias = [
+            {
+              thumb: "https://i.imgur.com/OP3Y9NO.jpeg",
+              title: "Salão do Reino das Testemunhas de Jeová Passa Vergonha Após Nova Tentativa de Sequestro Fracassada",
+              link: "./n20.html",
+            },
+            {
+              thumb: "https://i.ibb.co/bM6yMbnR/image.png",
+              title: "Vandalismo Prejudica Praças Recém-Reformadas em São Gonçalo",
+              link: "./n19.html",
+            },
+            {
+              thumb: "https://i.ibb.co/sJpsS82v/image.png",
+              title: "A BR-101 passará por interdições parciais devido a obras entre os bairros de São Gonçalo. Fique atento às mudanças no tráfego",
+              link: "./n18.html",
+            },
+            {
+              thumb: "https://i.imgur.com/WJwjjhe.jpeg",
+              title: "Prepare-se para a Ação: Delta Force Mobile Chega com Novidades Empolgantes",
+              link: "./n17.html",
+            },
+            {
+              thumb: "https://i.imgur.com/ZK79HdO.png",
+              title: "Materia especial: ele revelou tudo!",
+              link: "./n16.html",
+            },
+            {
+              thumb: "https://i.imgur.com/hS8SOiz.png",
+              title: "Testemunhas de Jeová procuram jornalistas: tentativa de censura?",
+              link: "./n15.html",
+            },
+            {
+              thumb: "https://i.imgur.com/7Fy0fzn.png",
+              title: "Polícia investiga: Jeová, o Deus da hipnose",
+              link: "./n14.html",
+            },
+            {
+              thumb: "https://i.imgur.com/7sNlXBR.jpeg",
+              title: "Descubra a Sabor Gelado: a sorveteria que vai derreter seu coração!",
+              link: "./n13.html",
+            },
+            {
+              thumb: "https://i.imgur.com/ocVZbpN.png",
+              title: "Sequestradores das Testemunhas de Jeová: audio revela conversa chocante",
+              link: "./n12.html",
+            },
+            {
+              thumb: "https://i.imgur.com/5EWgbQE.png",
+              title: "Dani Store: o destino perfeito para o estilo feminino",
+              link: "./n11.html",
+            },
+            {
+              thumb: "https://i.imgur.com/IG5iGvW.png",
+              title: "Mercado Tittio um ponto de compras do Boaçu",
+              link: "./n5.html",
+            },
+            {
+              thumb: "https://i.imgur.com/SAh3lhn.jpeg",
+              title: "⚠️ Urgente: Testemunhas de Jeová Sob Suspeita",
+              link: "./n9.html",
+            },
+            {
+              thumb: "https://i.imgur.com/vKSVUN3.png",
+              title: "Falta de Luz Afeta Boaçu e Porto do Rosa",
+              link: "./n4.html",
+            },
+            {
+              thumb: "https://i.imgur.com/YqhjikT.png",
+              title: "Reeleição do Capitão Nelson",
+              link: "./n6.html",
+            },
+            {
+              thumb: "https://i.imgur.com/CgrfI1D.png",
+              title: "Descubra a Perfumaria Vianna",
+              link: "./n1.html",
+            },
+            {
+              thumb: "https://i.ibb.co/HtPMrFs/JLVNUl5.jpg",
+              title: "Descaso com o lixo no Boaçu: uma realidade preocupante",
+              link: "./n2.html",
+            },
+            {
+              thumb: "https://i.ibb.co/Xsr2g4D/gCFJkp7.png",
+              title: "Testemunhas de Jeová: A propaganda é a alma do negócio.",
+              link: "./n10.html",
+            },
+            {
+              thumb: "https://i.imgur.com/kCnBMYq.png",
+              title: "Review do Jogo Mobile: Endless Wander",
+              link: "./n3.html",
+            },
+          ];
+
+          function renderNoticias( ) {
+            const container = document.getElementById("noticias-container");
+            let html = "";
+
+            for (const noticia of noticias) {
+              html += `
+                <article>
+                  <a href="${noticia.link}">
+                    <img src="${noticia.thumb}" alt="${noticia.title}" />
+                  </a>
+                  <a href="${noticia.link}">
+                    <h3>${noticia.title}</h3>
+                  </a>
+                </article>
+              `;
+            }
+
+            container.innerHTML = html;
+          }
+
+          document.addEventListener("DOMContentLoaded", renderNoticias);
+        </script>
+
+
+      </section>
+
+      <footer>
+        <center>
+          <div class="social">
+            <div style="display: none;">
+              <img
+                src="https://cdn.glitch.global/2a3ba37e-8fd6-45e1-a2a5-5165eb61a890/icons8-instagram.svg?v=1728491751044"
+                style="width: 40px; filter: invert(1 )"
+              />
+            </div>
+            <div style="display: none;">
+              <img
+                src="https://cdn.glitch.global/2a3ba37e-8fd6-45e1-a2a5-5165eb61a890/Threads_(app )_logo.svg?v=1728491760329"
+                style="width: 40px; filter: invert(1)"
+              />
+            </div>
+            <div>
+              <a href="https://www.facebook.com/profile.php?id=61571368469882"
+                ><img
+                  src="https://i.imgur.com/RqnU7Cw.png"
+                  style="width: 40px; filter: invert(1 )"
+              /></a>
+            </div>
+            <div>
+              <a href="https://x.com/boacunews"
+                ><img
+                  src="https://i.imgur.com/BTSc0qC.png"
+                  style="width: 40px; filter: invert(1 )"
+              /></a>
+            </div>
+            <div>
+              <a href="https://www.youtube.com/@boacu.noticias"
+                ><img
+                  src="https://i.imgur.com/67GMeup.png"
+                  style="width: 40px; filter: invert(1 )"
+              /></a>
+            </div>
+            <div>
+              <a href="https://www.tiktok.com/@boacu.news"
+                ><img
+                  src="https://i.imgur.com/uvIlrlS.png"
+                  style="width: 40px; filter: invert(1 )"
+              /></a>
+            </div>
+          </div>
+        </center>
+        <p>&copy; 2025 Boaçu News. Todos os direitos reservados.</p>
+        <a href="./contatoEPublicidade.html">Contato e publicidade</a> | <a href="./equipe.html">Equipe</a>
+      </footer>
+    </main>
+  </body>
+</html>
